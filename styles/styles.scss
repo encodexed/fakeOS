@@ -1,7 +1,103 @@
+@use "./partials/base.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva,
+		Verdana, sans-serif;
+	cursor: default;
+	user-select: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
 body {
 	width: 100%;
 	background-color: #3764a6;
 	background-image: url("../images/wallpaper.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+
+.menu-bar {
+	height: 30px;
+	background-color: #fcfcfc;
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.45);
+
+	nav {
+		display: flex;
+		height: 30px;
+		margin: 0 8px;
+		align-items: center;
+	}
+
+	&__apple-logo {
+		& img {
+			padding: base.$menu-padding;
+			width: 23px;
+			height: 23px;
+		}
+	}
+
+	&__app-items {
+		display: flex;
+		text-shadow: base.$default-text-shadow;
+
+		& div p {
+			padding: base.$menu-padding;
+		}
+	}
+
+	&__system-DT {
+		margin-left: auto;
+		text-shadow: base.$default-text-shadow;
+
+		& p {
+			padding: base.$menu-padding;
+		}
+	}
+}
+
+.system-highlight {
+	background-color: base.$system-color;
+	color: white;
+}
+
+.menu-bar-dropdown {
+	display: none;
+	color: black;
+	text-shadow: none;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.7);
+	top: 30px;
+	width: 400px;
+	height: auto;
+	box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.25);
+	padding-bottom: 5px;
+
+	& ul li {
+		padding: 4px 20px;
+
+		&:hover {
+			@extend .system-highlight;
+		}
+	}
+}
+
+.dropdown-spacing {
+	margin-bottom: 8px;
+}
+
+.disabled {
+	color: grey;
+}
+
+input {
+	border-radius: 5px;
+	width: 100%;
+	padding: 4px;
 }
