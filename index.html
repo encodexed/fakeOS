@@ -4,7 +4,192 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/styles.css" />
+		<script src="./scripts/mainScript.js" defer></script>
 		<title>Mac OS X</title>
 	</head>
-	<body></body>
+	<body>
+		<header class="menu-bar">
+			<nav>
+				<div id="menuItem0" class="menu-bar__apple-logo menu-bar-hoverable">
+					<img
+						src="./images/apple-logo-transparent.png"
+						alt="The apple logo menu icon"
+					/>
+					<div class="menu-bar-dropdown">
+						<ul>
+							<li>About This Mac</li>
+							<li class="dropdown-spacing">Get Mac OS X Software...</li>
+							<li>System Preferences...</li>
+							<li>Dock</li>
+							<li class="dropdown-spacing">Location</li>
+							<li class="dropdown-spacing">Recent Items</li>
+							<li class="dropdown-spacing">Force Quit...</li>
+							<li>Sleep</li>
+							<li>Restart</li>
+							<li class="dropdown-spacing">Shut Down</li>
+							<li>Log Out...</li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-bar__app-items">
+					<div id="menuItem1" class="menu-bar-hoverable">
+						<p>
+							<strong>Finder</strong>
+						</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li class="dropdown-spacing">About Finder</li>
+								<li class="dropdown-spacing">Settings...</li>
+								<li class="dropdown-spacing">Empty Bin...</li>
+								<li class="dropdown-spacing">Services</li>
+								<li>Hide Finder</li>
+								<li>Hide Others</li>
+								<li class="disabled">Show All</li>
+							</ul>
+						</div>
+					</div>
+					<div id="menuItem2" class="menu-bar-hoverable">
+						<p>File</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li>New Finder Window</li>
+								<li>New Folder</li>
+								<li class="disabled">New Folder with Selection</li>
+								<li>New Smart Folder</li>
+								<li>New Tab</li>
+								<li class="disabled">Open</li>
+								<li class="disabled">Open With</li>
+								<li class="dropdown-spacing disabled">Close Window</li>
+								<li>Get Info</li>
+								<li class="disabled">Rename</li>
+								<li class="disabled">Compress</li>
+								<li class="disabled">Duplicate</li>
+								<li class="disabled">Make Alias</li>
+								<li class="disabled">Quick Look</li>
+								<li class="dropdown-spacing disabled">Print</li>
+								<li class="dropdown-spacing disabled">Share...</li>
+								<li class="disabled">Show Original</li>
+								<li class="dropdown-spacing disabled">Add Sidebar</li>
+								<li class="disabled">Move to Bin</li>
+								<li class="dropdown-spacing disabled">Eject</li>
+								<li class="dropdown-spacing disabled">Tags...</li>
+								<li>Find</li>
+							</ul>
+						</div>
+					</div>
+					<div id="menuItem3" class="menu-bar-hoverable">
+						<p>Edit</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li class="disabled">Undo</li>
+								<li class="dropdown-spacing disabled">Redo</li>
+								<li class="disabled">Cut</li>
+								<li class="disabled">Copy</li>
+								<li class="disabled">Paste</li>
+								<li class="dropdown-spacing">Select All</li>
+								<li class="dropdown-spacing">Show Clipboard</li>
+								<li>Start Dictation...</li>
+								<li>Emoji & Symbols</li>
+							</ul>
+						</div>
+					</div>
+					<div id="menuItem4" class="menu-bar-hoverable">
+						<p>View</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li class="disabled">as Icons</li>
+								<li class="disabled">as List</li>
+								<li class="disabled">as Columns</li>
+								<li class="dropdown-spacing disabled">as Gallery</li>
+								<li>Use Stacks</li>
+								<li>Sort By</li>
+								<li>Clean Up</li>
+								<li class="dropdown-spacing">Clean Up By</li>
+								<li class="disabled">Hide Sidebar</li>
+								<li class="dropdown-spacing disabled">Hide Preview</li>
+								<li class="disabled">Hide Toolbar</li>
+								<li class="disabled">Show All Tabs</li>
+								<li class="disabled">Hide Tab Bar</li>
+								<li class="disabled">Hide Path Bar</li>
+								<li class="dropdown-spacing disabled">Hide Status Bar</li>
+								<li class="disabled">Customise Toolbar...</li>
+								<li class="dropdown-spacing">Customise Touch Bar...</li>
+								<li>Show View Options</li>
+								<li class="dropdown-spacing disabled">Show Preview Options</li>
+								<li class="disabled">Enter Full Screen</li>
+							</ul>
+						</div>
+					</div>
+					<div id="menuItem5" class="menu-bar-hoverable">
+						<p>Go</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li class="disabled">Back</li>
+								<li class="disabled">Forward</li>
+								<li class="dropdown-spacing">Enclosing Folder</li>
+								<li>Recent</li>
+								<li>Documents</li>
+								<li>Desktop</li>
+								<li>Downloads</li>
+								<li>Home</li>
+								<li>Computer</li>
+								<li>AirDrop</li>
+								<li>Network</li>
+								<li>iCloud Drive</li>
+								<li>Shared</li>
+								<li>Applications</li>
+								<li class="dropdown-spacing">Utilities</li>
+								<li class="dropdown-spacing">Recent Folders</li>
+								<li>Go to Folder...</li>
+								<li>Connect to Server...</li>
+							</ul>
+						</div>
+					</div>
+					<div id="menuItem6" class="menu-bar-hoverable">
+						<p>Window</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li class="disabled">Minimize</li>
+								<li class="disabled">Zoom</li>
+								<li class="disabled">
+									Move Window to the Left Side of the Screen
+								</li>
+								<li class="disabled">
+									Move Window to the Right Side of the Screen
+								</li>
+								<li class="dropdown-spacing disabled">Replace Tiled Window</li>
+								<li class="dropdown-spacing disabled">
+									Remove Window from Set
+								</li>
+								<li class="disabled">Move to Built-in Retina Display</li>
+								<li class="dropdown-spacing disabled">Move to iPad</li>
+								<li class="disabled">Show Previous Tab</li>
+								<li class="disabled">Show Next Tab</li>
+								<li class="disabled">Move Tab to New Window</li>
+								<li class="dropdown-spacing disabled">Merge All Windows</li>
+								<li class="disabled">Cycle Through Windows</li>
+								<li class="dropdown-spacing disabled">Show Progress Window</li>
+								<li>Bring All to Front</li>
+							</ul>
+						</div>
+					</div>
+					<div id="menuItem7" class="menu-bar-hoverable">
+						<p>Help</p>
+						<div class="menu-bar-dropdown">
+							<ul>
+								<li class="dropdown-spacing">
+									<input type="text" placeholder="Search" />
+								</li>
+								<li>Tips for Your Mac</li>
+								<li>macOS Help</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="menuItem8" class="menu-bar__system-DT menu-bar-hoverable">
+					<p id="dateTime"></p>
+				</div>
+			</nav>
+		</header>
+	</body>
 </html>
