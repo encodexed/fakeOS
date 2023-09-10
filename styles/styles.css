@@ -16,9 +16,12 @@ body {
   background-image: url("../images/wallpaper.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-bar {
+  z-index: 2;
   height: 30px;
   background-color: #fcfcfc;
   position: sticky;
@@ -83,6 +86,23 @@ input {
   border-radius: 5px;
   width: 100%;
   padding: 4px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dock {
+  z-index: 1;
+  height: 75px;
+  width: 94%;
+  background-color: rgba(252, 252, 252, 0.6);
+  display: flex;
+  padding: 0 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
