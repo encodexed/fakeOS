@@ -1,2 +1,3 @@
 # fakeOS
-Recreates the Ubuntu OS in a browser setting
+
+Recreates the MAC OS X in a browser setting
