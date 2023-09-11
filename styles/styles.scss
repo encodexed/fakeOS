@@ -17,8 +17,7 @@ body {
 	width: 100%;
 	background-color: #3764a6;
 	background-image: url("../images/wallpaper.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 }
@@ -116,7 +115,7 @@ footer {
 .dock {
 	z-index: 1;
 	height: 75px;
-	width: 94%;
+	width: fit-content;
 	background-color: rgba(252, 252, 252, 0.6);
 	display: flex;
 	padding: 0 5px;
