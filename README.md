@@ -8,7 +8,7 @@
 - Menubar dropdowns appear at the click of a button, and operate exactly the same as on a real Mac.
 - Minecraft and the two text files will open when double-clicked.
 
-## Feature To-do list
+## Feature To-do list that I ran out of time for
 
 - Menubar items with a secondary dropdown need to have that
 - Dock has more interactivity
