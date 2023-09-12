@@ -4,7 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/styles.css" />
-		<script src="./scripts/mainScript.js" defer></script>
+		<script type="module" src="./scripts/desktop.js" defer></script>
+		<script type="module" src="./scripts/closeButtons.js" defer></script>
+		<script type="module" src="./scripts/menubar.js" defer></script>
+		<script type="module" src="./scripts/getCurrentTime.js" defer></script>
 		<title>Mac OS X</title>
 	</head>
 	<body>
@@ -191,5 +194,133 @@
 				</div>
 			</nav>
 		</header>
+		<main>
+			<div id="hdIcon" class="desktop-icon">
+				<img src="./images/desktop/HD.png" alt="Hard disk desktop icon" />
+				<p>Macintosh HD</p>
+			</div>
+			<div id="minecraftIcon" class="desktop-icon">
+				<img
+					src="./images/desktop/minecraft.png"
+					alt="Minecraft desktop icon"
+				/>
+				<p>Minecraft</p>
+			</div>
+			<div id="projectsFolderIcon" class="desktop-icon">
+				<img src="./images/desktop/folder.png" alt="Folder desktop icon" />
+				<p>Projects</p>
+			</div>
+			<div id="notesFolderIcon" class="desktop-icon">
+				<img src="./images/desktop/folder.png" alt="Folder desktop icon" />
+				<p>Notes</p>
+			</div>
+			<div id="mondayNotesIcon" class="desktop-icon">
+				<img src="./images/desktop/txtfile.png" alt="Text file desktop icon" />
+				<p>Monday's Notes</p>
+			</div>
+			<div id="shoppingListIcon" class="desktop-icon">
+				<img src="./images/desktop/txtfile.png" alt="Text file desktop icon" />
+				<p>Shopping List</p>
+			</div>
+			<div id="minecraftModal" class="app-container--minecraft">
+				<div class="app-title-bar">
+					<div class="app-title-bar--buttons">
+						<div id="closeMinecraft"></div>
+						<div></div>
+						<div></div>
+					</div>
+					<p>Minecraft Launcher</p>
+				</div>
+				<img
+					class="minecraft-img"
+					src="https://www.videogameschronicle.com/files/2019/04/minecraft-master.jpg"
+					alt="Minecraft splash loading screen"
+				/>
+			</div>
+			<div id="mondaysNotesModal" class="app-container--mondays-notes">
+				<div class="app-title-bar">
+					<div class="app-title-bar--buttons">
+						<div id="closeMondaysNotes"></div>
+						<div></div>
+						<div></div>
+					</div>
+					<p>Monday's Notes</p>
+				</div>
+				<textarea class="mondays-notes-ta">
+Functions
+					
+Functions in Javascript are first class citizens
+								
+Functions are values:
+					
+Functions can be saved to variables
+const myFunction = () => {
+	return 10;
+};
+
+const myOtherFunction = function () {
+	return 10;
+};
+Functions can be the return value of other functions...
+
+We can use closures to do some cool stuff
+Functions can be parameters to other functions
+
+Callback Functions
+A function that is passed into another function argument
+const add = (a, b) => a + b;
+const subtract = (x, y) => x - y;
+
+const calculate = (num1, num2, callback) => {
+	console.log({ num1, num2, callback }); // cute liconsole trick
+	return callback(num1, num2);
+};
+And now passed in anonymously
+console.log(calculate(5, 9, (c, d) => c * d));
+You could use the function keyword in here instead oarrow function but it is an old and harder way of dthings
+				</textarea
+				>
+			</div>
+			<div id="shoppingListModal" class="app-container--shopping-list">
+				<div class="app-title-bar">
+					<div class="app-title-bar--buttons">
+						<div id="closeShoppingList"></div>
+						<div></div>
+						<div></div>
+					</div>
+					<p>Shopping List</p>
+				</div>
+				<textarea class="shopping-list-ta">
+Shopping List
+
+- Oranges
+- Apples
+- Milk 
+- Bread
+- Chocolate
+				</textarea
+				>
+			</div>
+		</main>
+		<footer>
+			<div class="dock">
+				<img src="./images/dock/finder.png" alt="Finder icon" />
+				<img src="./images/dock/appstore.png" alt="App Store icon" />
+				<img src="./images/dock/safari.png" alt="Safari icon" />
+				<img src="./images/dock/mail.png" alt="Mail icon" />
+				<img src="./images/dock/messages.png" alt="Messages icon" />
+				<img src="./images/dock/calendar.png" alt="Calendar icon" />
+				<img src="./images/dock/music.png" alt="Music icon" />
+				<img src="./images/dock/photos.png" alt="Photos icon" />
+				<img src="./images/dock/calculator.png" alt="Calculator icon" />
+				<img src="./images/dock/calendar.png" alt="Calendar icon" />
+				<img src="./images/dock/chrome.png" alt="Chrome icon" />
+				<img src="./images/dock/discord.png" alt="Discord icon" />
+				<img src="./images/dock/office.png" alt="Microsoft Office icon" />
+				<img src="./images/dock/excel.png" alt="Microsoft Excel icon" />
+				<img src="./images/dock/settings.png" alt="Settings icon" />
+				<img src="./images/dock/bin.png" alt="Bin icon" />
+			</div>
+		</footer>
 	</body>
 </html>
